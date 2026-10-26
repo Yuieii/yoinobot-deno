@@ -2,3 +2,5 @@
 .env
 tokens.bot.json
 tokens.streamer.json
+
+message.json
