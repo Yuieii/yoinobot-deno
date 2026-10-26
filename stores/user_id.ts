@@ -1,0 +1,1 @@
+export const UserIdStore = new Map<string, string>();

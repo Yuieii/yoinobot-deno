@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "default": {
+      "net": true,
+      "read": true,
+      "write": true,
+      "env": true
+    }
+  },
+  "tasks": {
+    "dev": "deno watch -P --env-file main.ts",
+    "once": "deno run -P --env-file once.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@twurple/auth": "npm:@twurple/auth",
+    "@twurple/api": "npm:@twurple/api",
+    "@twurple/eventsub-base": "npm:@twurple/eventsub-base",
+    "@twurple/eventsub-ws": "npm:@twurple/eventsub-ws",
+    "@twurple/eventsub-http": "npm:@twurple/eventsub-http",
+    "obs-websocket-js": "npm:obs-websocket-js",
+    "@std/fmt": "jsr:@std/fmt",
+    "@std/fs": "jsr:@std/fs"
+  }
+}
